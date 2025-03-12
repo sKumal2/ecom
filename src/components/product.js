@@ -17,8 +17,12 @@ function product( { product }) {
 
         <Card.Text>
           <div className='my-3'>
-            {product.rating} from {product.numReviews}
+            {product.rating} from {product.numReviews} reviews
           </div>
+        </Card.Text>
+
+        <Card.Text as="h3">
+          ${product.price}
         </Card.Text>
       </Card.Body>
     </Card>
